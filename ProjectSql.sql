@@ -1,13 +1,12 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2759
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
-{\*\expandedcolortbl;;\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c99985;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c1\c1;}
 \margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \deftab720
 \pard\pardeftab720\partightenfactor0
 
 \f0\fs26 \cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec3 \
 CREATE PROC dbo.LibraryManagementSystemProcedure\
 AS\
 CREATE DATABASE db_LibraryManagement\
@@ -430,7 +429,4 @@ AS\
 				INNER JOIN tbl_library_branch AS Branch ON Copies.book_copies_BranchID = Branch.library_branch_BranchID\
 			WHERE Branch.library_branch_BranchName = @BranchName AND Authors.book_authors_AuthorName = @AuthorName\
 GO	\
-EXEC dbo.BookbyAuthorandBranch\
-\
-/* ==================================== STORED PROCEDURE QUERY QUESTIONS =================================== */\
-}
+EXEC dbo.BookbyAuthorandBranch}
